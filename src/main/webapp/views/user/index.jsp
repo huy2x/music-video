@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nhạc suyyyyy</title>
+<title>Music-Video</title>
 <%@ include file="/common/head.jsp"%>
 
 <!--
@@ -47,45 +47,30 @@ https://templatemo.com/tm-552-video-catalog
 				</div>
 
 				<div class="row tm-catalog-item-list">
-					<div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-						<div class="position-relative tm-thumbnail-container">
-							<img src="teamplates/user/img/tn-01.jpg" alt="Image"
-								class="img-fluid tm-catalog-item-img"> <a
-								href="video-page.html" class="position-absolute tm-img-overlay">
-								<i class="fas fa-play tm-overlay-icon"></i>
-							</a>
+					<c:forEach items="${videos}" var="video">
+						<div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+							<h5 class="tm-text-secondary"
+								style="white-space: nowrap; overflow: hidden;">
+								${video.title}</h5>
+							<div class="position-relative tm-thumbnail-container">
+								<img src="teamplates/user/img/tn-01.jpg" alt="Image"
+									class="img-fluid tm-catalog-item-img"> <a
+									href="video-page.html" class="position-absolute tm-img-overlay">
+									<i class="fas fa-play tm-overlay-icon"></i>
+								</a>
+							</div>
+							<div class="d-flex justify-content-between tn-text--gray">
+								<h3 class="tm-text-primary mb-3 tm-catalog-item-title">Aenean
+									aliquet sapien</h3>
+								<span class="tm-text-gray-light">${video.shares} shares</span> <span>${video.views}
+									views</span>
+							</div>
 						</div>
-						<div class="p-4 tm-bg-gray tm-catalog-item-description">
-							<h3 class="tm-text-primary mb-3 tm-catalog-item-title">Aenean
-								aliquet sapien</h3>
-							<p class="tm-catalog-item-text">
-								Video thumbnail has a link to another HTML page. Categories <span
-									class="tm-text-secondary">do not need</span> any JS. They are
-								just separated HTML pages. Paging is at the bottom to extend the
-								list as long as you want. This can be a large catalog.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-						<div class="position-relative tm-thumbnail-container">
-							<img src="teamplates/user/img/tn-02.jpg" alt="Image"
-								class="img-fluid tm-catalog-item-img"> <a
-								href="video-page.html" class="position-absolute tm-img-overlay">
-								<i class="fas fa-play tm-overlay-icon"></i>
-							</a>
-						</div>
-						<div class="p-4 tm-bg-gray tm-catalog-item-description">
-							<h3 class="tm-text-primary mb-3 tm-catalog-item-title">Mauris
-								in odio vel odio</h3>
-							<p class="tm-catalog-item-text">
-								You may need TemplateMo for a quick chat or send an email if you
-								have any question about this CSS template. <span
-									class="tm-text-secondary">font-family: 'Source Sans
-									Pro', sans-serif; for this template.</span>
-							</p>
-						</div>
-					</div>
-					
+					</c:forEach>
+				</div>
+
+
+
 
 				<!-- Catalog Paging Buttons -->
 				<div>
@@ -105,7 +90,7 @@ https://templatemo.com/tm-552-video-catalog
 			</main>
 
 			<!-- Subscribe form and footer links -->
-		<%@ include file="/common/footer.jsp" %>
+			<%@ include file="/common/footer.jsp"%>
 </body>
 
 </html>

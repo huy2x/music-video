@@ -11,7 +11,7 @@
 							<a href="index.html"
 								class="tm-bg-black text-center tm-logo-container"> <i
 								class="fas fa-video tm-site-logo mb-3"></i>
-								<h1 class="tm-site-name">Video nhạc </h1>
+								<h1 class="tm-site-name">Video nhạc</h1>
 							</a>
 						</div>
 						<div class="col-5 col-md-8 ml-auto mr-0">
@@ -33,11 +33,21 @@
 												class="nav-link tm-nav-link" href="#">Videos <span
 													class="sr-only">(current)</span></a></li>
 											<li class="nav-item"><a class="nav-link tm-nav-link"
-												href="about.html">About</a></li>
-											<li class="nav-item"><a class="nav-link tm-nav-link"
-												href="contact.html">Contact</a></li>
+												href="about.html">Register</a></li>
+											<li class="nav-item dropdown"><a
+												class="nav-link tm-nav-link dropdown-toggle" href="#"
+												id="userDropdown" role="button" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false"> User Menu </a>
+												<div class="dropdown-menu" aria-labelledby="userDropdown">
+													<a class="dropdown-item" href="login.html">Login</a> <a
+														class="dropdown-item" href="forgot-password.html">Forgot
+														Password</a> <a class="dropdown-item" href="favorites.html">My
+														Favorites</a> <a class="dropdown-item" href="history.html">History</a>
+													<a class="dropdown-item" href="logout.html">Log out</a>
+												</div></li>
 										</ul>
 									</div>
+
 								</nav>
 							</div>
 						</div>
@@ -59,7 +69,8 @@
 			<div id="tm-video-container">
 				<video autoplay muted loop id="tm-video">
 					<!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-					<source src="teamplates/user/video/wheat-field.mp4" type="video/mp4">
+					<source src="teamplates/user/video/wheat-field.mp4"
+						type="video/mp4">
 				</video>
 			</div>
 
