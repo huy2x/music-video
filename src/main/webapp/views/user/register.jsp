@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
+<title>Register</title>
 <%@ include file="/common/head.jsp"%>
 
 
@@ -29,7 +29,7 @@ https://templatemo.c	om/tm-552-video-catalog
 				<div class="col-lg-12 col-12 mb-5">
 					<div class="mx-auto tm-about-text-container px-3">
 						<center>
-							<h2 class="tm-page-title mb-4 tm-text-primary">Login</h2>
+							<h2 class="tm-page-title mb-4 tm-text-primary">Register</h2>
 							<center>
 					</div>
 				</div>
@@ -37,7 +37,7 @@ https://templatemo.c	om/tm-552-video-catalog
 			<div class="mx-auto pb-3 tm-about-text-container px-3">
 				<div class="row">
 					<div class="col-lg-12 col-12 mb-5">
-						<form id="login-form" action="login" method="POST"
+						<form id="register-form" action="register" method="POST"
 							class="tm-contact-form">
 							<div class="form-group">
 								<input type="username" name="username"
@@ -47,6 +47,16 @@ https://templatemo.c	om/tm-552-video-catalog
 							<div class="form-group">
 								<input type="password" name="password"
 									class="form-control rounded-0" placeholder="Password"
+									required="" />
+							</div>
+							<div class="form-group">
+								<input type="password" name="cfmPass"
+									class="form-control rounded-0" placeholder="Comform Password"
+									required="" />
+							</div>
+							<div class="form-group">
+								<input type="email" name="email"
+									class="form-control rounded-0" placeholder="Email"
 									required="" />
 							</div>
 

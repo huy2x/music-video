@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public User create(String username, String password, String email) {
+	public User register(String username, String password, String email) {
 		User newUser = new User();
 		newUser.setUsername(username);
 		newUser.setPassword(password);
